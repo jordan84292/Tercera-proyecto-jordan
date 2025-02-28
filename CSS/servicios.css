@@ -1,0 +1,90 @@
+.servicios{
+    height: calc(max-content +100px);
+}.servicios-container{
+    height: max-content ;
+    background-image: url("./IMGS/fondo_servicios.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-flow: row wrap;
+padding: 20px 10px;
+}
+.servicios .cardServicio{
+    height: 640px;
+    flex: 0 1 32%;
+    background-color: red;
+    border-radius: 50px 0px 50px 0px;
+    backdrop-filter: blur("10px");
+    background-color: rgba(88, 87, 86, 0.719);
+    padding: 15px;  
+}.servicios .cardServicio:hover{
+    border: medium solid green;
+    transform: translateY(-10px);
+}
+
+.cardServicio h1{
+    text-align: center;
+   
+}
+
+.cardServicio h4{
+    height: 10%;
+    text-align: center;
+    font-size: 22px;
+}.servicios .paquete{
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 0px 0px 50px 50px;
+    padding: 5px;
+}.paquete strong{
+    font-size: 20px;
+    color: gold;
+    margin-right: 5px;
+}.paquete h5{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: white;
+}.paquete h2{
+    margin-top: 5px;
+    text-align: center;
+    color: gold;
+    border: 2px solid gold;
+    font-size: 28px;
+}.paquete ul{
+    padding: 20px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    align-items: stretch;
+}.paquete ul li{
+    margin:5px;
+}
+@media (max-width:680px) {
+    .servicios{
+        background-color: black;
+    }
+    .servicios .cardServicio{
+        flex: 0 0 80%;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width:681px) {
+.servicios{
+    background-image: url("../IMGS/fondo_servicios.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+}
+    .servicios .cardServicio{
+        min-width: 380px;
+        margin-bottom: 10px;
+    }
+}

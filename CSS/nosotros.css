@@ -1,0 +1,183 @@
+.nosotros{
+    width: 100vw;
+    height: max-content;
+    position: relative;
+}img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.tittle{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(16px,35px,5vw);
+    border: medium groove gold;
+    margin-bottom: 20px;
+}
+.team-container{
+    height: max-content; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;  
+    flex-direction: column;
+}.card{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+   
+}
+.card-fron{
+  transform: rotateY(0deg);
+  
+  
+}.card-back h5{
+    font-size: clamp(15px,20px,4vw);
+}
+.card-back{
+    color: gold;
+ background-color: black;
+    padding: 3%;
+    transform: rotateY(180deg);
+    position: relative;
+}.card-back h1{
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+.card-active{
+    transform: rotateY(180deg);
+}
+.card-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}.card-footer a{
+    background-color: green;
+    width: 40%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    border: medium solid white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}.card-footer a img{
+    height: 60%;
+    width: 20%;
+}
+
+.card-footer a:hover{
+    transform: translateY(-20px);
+    border-color: rgb(37, 246, 5);
+    z-index: 999;
+    
+}
+.card-footer-fron{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    animation: move 2s linear infinite alternate;
+}.card-footer-fron button{
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    border: medium solid gold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer button:hover{
+    transform: translateY(-20px);
+    border-color: rgb(37, 246, 5);
+    
+}
+@keyframes move {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:680px) {
+   
+    .card-container{
+       width: 70vw;
+        height: 80vh;
+        min-width: 300px;
+        max-width: 350px;
+        border: medium solid black;
+        border-radius: 10px;
+        transition: transform 1500ms ease-in-out;
+        perspective: 10px;
+        transform-style: preserve-3d;
+        margin-bottom: 20px;
+    }.card-container img{
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+}
+@media (min-width:681px) {
+    .team-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card-container{
+       width: 350px;
+        height: 80vh;
+        min-width: 300px;
+        border: medium solid black;
+        border-radius: 10px;
+        transition: transform 1500ms ease-in-out;
+        perspective: 10px;
+        transform-style: preserve-3d;
+        margin: 10px 20px;
+        
+    }
+    
+}
+
+

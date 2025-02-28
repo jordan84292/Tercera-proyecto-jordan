@@ -1,0 +1,63 @@
+.banner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    z-index: 1;
+}
+.slider-container{
+    width: 100%;
+    height: 100%;
+    border: medium solid black;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+}
+.slide{
+    flex: 0 0 100%;
+    height: 100%;
+    animation: moveSlider 20s steps(1) infinite  ;
+    animation-play-state: running;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+.slide img{
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+    
+}.slide-active{
+    animation-play-state: paused;
+}
+@keyframes moveSlider {
+    0%{
+    transform: translateX(0%);
+    }
+    40%{
+    transform: translateX(-100%);
+    }
+    65%{
+    transform: translateX(-200%);
+    }
+}
+.motivacion{
+    position: absolute;
+    height: 250px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(15px,30px,4vw);
+    color: white;
+    padding-left: 4%;
+    box-shadow: inset 5px 5px 8px 3px rgba(151, 150, 150, 0.199);
+    border-radius: 15px;
+    margin-bottom: 90px;
+}
