@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gym Assistant</title>
     
     <link rel="stylesheet" href="./CSS/banner.css">
     <link rel="stylesheet" href="./CSS/nosotros.css">
@@ -16,9 +16,11 @@
         <img src="./IMGS/menu.png" alt="hamburguer" class="hamburger">
         <img src="./IMGS/menu-colapse.png" alt="hamburger colapse" class="hamburger-colapse">
     </article>
-    <?php
+<?php
     require_once "header.php"
     ?> 
+
+   
 
     <?php
     require_once "banner.php"
@@ -36,4 +38,5 @@
 <script src="./javaScript/nosotros.js"></script>
 <script src="./javaScript/banner.js"></script>
 </body>
+
 </html>
