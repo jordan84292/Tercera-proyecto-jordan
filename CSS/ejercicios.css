@@ -16,6 +16,7 @@
 }.video-container iframe{
     width: 100%;
     height: 85vh;
+    aspect-ratio: 16/9;
 
    
 }.ejercicios{
@@ -64,4 +65,30 @@ flex-direction: column;
     background-color: white;
     color: gold;
     font-weight: bolder;
+}
+
+@media screen and (max-width:800px){
+    .container{
+        grid-template-rows: max-content max-content;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "videos";
+       
+    }
+  
+   .ejercicios{
+    grid-area: aside;
+   }
+    .video-container{
+        display: flex;
+        align-items: top;
+        grid-area: videos;
+        border: medium solid black;
+
+    }.video-container iframe{
+        height: max-content;
+        aspect-ratio: 16/9;
+    }
+
 }
