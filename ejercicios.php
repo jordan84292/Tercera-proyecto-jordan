@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="./CSS/ejercicios.css">
 </head>
 <body>
-<article class="menu-hamburger">
-        <img src="./IMGS/menu.png" alt="hamburguer" class="hamburger">
-        <img src="./IMGS/menu-colapse.png" alt="hamburger colapse" class="hamburger-colapse">
-    </article>
+
     <?php
     require_once "header.php"
     ?>
