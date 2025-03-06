@@ -20,3 +20,15 @@ btns.forEach(btn=>{
   })
 
 })
+// Verificar si el la pantalla cambia y activa el menu hamburguesa
+window.addEventListener("resize",()=>{
+  let container = document.querySelector(".menu-hamburger");
+  if(window.innerWidth=680 && container.classList.contains("menu-hamburger")){
+   
+      container.classList.remove("hamburger-active");
+  }
+  
+})
+
+
+
