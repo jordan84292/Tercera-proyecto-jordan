@@ -62,7 +62,7 @@ flex-direction: column;
 .container-active{
     display: flex;
 }.subTittle-exercice:hover{
-    background-color: white;
+    background-color: rgba(7, 6, 6, 0.753);
     color: gold;
     font-weight: bolder;
 }

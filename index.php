@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Assistant</title>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/banner.css">
     <link rel="stylesheet" href="./CSS/nosotros.css">
-    <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/servicios.css">
     
 </head>
@@ -27,6 +31,9 @@
     ?>
 <?php
     require_once "servicios.php"
+    ?>
+<?php
+    require_once "footer.php"
     ?>
 
 
